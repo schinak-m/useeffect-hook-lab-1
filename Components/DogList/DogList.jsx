@@ -9,7 +9,7 @@ export default function ShoppingList({ dogsList = [] }) {
           🐶
         </span>
       </h3>
-      {dogsList.map((dog) => (
+      {dogsList && dogsList.map((dog) => (
         <img src={dog} alt="" />
       ))}
     </div>
